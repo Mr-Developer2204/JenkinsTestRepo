@@ -1,6 +1,11 @@
 pipeline{
     agent any
     stages{
+        stage('Pull')
+        {
+            steps{
+                bat 'git pull'
+        }
         stage('Build')
         {
             //Steps to build a react app in windows
