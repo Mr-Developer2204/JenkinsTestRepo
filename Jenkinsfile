@@ -4,7 +4,7 @@ pipeline{
         stage('Pull')
         {
             steps{
-                bat 'git pull'
+                bat 'git pull origin main'
             }
         }
         stage('Build')
