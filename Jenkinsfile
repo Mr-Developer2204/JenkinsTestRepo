@@ -5,6 +5,7 @@ pipeline{
         {
             steps{
                 bat 'git pull'
+            }
         }
         stage('Build')
         {
